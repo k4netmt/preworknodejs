@@ -1,0 +1,26 @@
+{
+  "name": "proxyserver",
+  "version": "1.0.0",
+  "description": "build project proxy server to appy coderschool",
+  "main": "index.js",
+  "dependencies": {
+    "bar": "0.1.x",
+    "nodemon": "^1.10.2",
+    "request": "^2.75.0",
+    "yargs": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bar index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4netmt/preworknodejs.git"
+  },
+  "author": "kanet tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k4netmt/preworknodejs/issues"
+  },
+  "homepage": "https://github.com/k4netmt/preworknodejs#readme",
+  "devDependencies": {}
+}
