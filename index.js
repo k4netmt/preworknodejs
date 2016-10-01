@@ -25,7 +25,7 @@ logStream.write('proxyServer listening @ 127.0.0.1:8000 \n')
 
 var proxyServer = http.createServer(function (req, res) {
     logStream.write("proxyserver")
-    logStream.write(JSON.stringify(req.headers)+"\n")
+
     //x-destination-url
     var url= destinaltionUrl
     if (req.headers['x-destination-url']){
@@ -34,7 +34,10 @@ var proxyServer = http.createServer(function (req, res) {
     var options = {
         url: url + req.url
     }
-    req.pipe(request(options)).pipe(res)
+    var outboundRes=req.pipe(request(options))
+    logStream.write(JSON.stringify(outboundRes.headers)+"\n")
+    outboundRes.pipe(res)
+    outboundRes.pipe(logStream)
     // res.end(res.toString())
 })
 proxyServer.listen(9000)
