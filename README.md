@@ -21,6 +21,7 @@ Walkthrough Gif:
 ##Features
 
 ###Echo Server:
+```bash
 >curl -v http://127.0.0.1:8000 -d "hello word" -H "foo:bar"
 * Rebuilt URL to: http://127.0.0.1:8000/
 *   Trying 127.0.0.1...
@@ -45,12 +46,12 @@ Walkthrough Gif:
 < Connection: keep-alive
 <
 hello word* Connection #0 to host 127.0.0.1 left intact
-
+```
 
 ### Proxy Server:
 curl -v http://127.0.0.1:9000 -d "hello word" -H "foo:bar"
 Port 9000 will proxy to the echo server on port 8000.
-
+```bash
 * Rebuilt URL to: http://127.0.0.1:9000/
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 9000 (#0)
@@ -74,4 +75,4 @@ Port 9000 will proxy to the echo server on port 8000.
 < date: Sat, 01 Oct 2016 04:52:25 GMT
 <
 hello word* Closing connection 0
-
+```
