@@ -11,9 +11,6 @@ Completed:
 * [x] Required: Client requests and respones are printed to stdout
 * [x] Required: The `--logfile` argument outputs all logs to the file specified instead of stdout
 
-Walkthrough Gif:
-[Add walkthrough.gif to the project root]
-
 ![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/proxyServer.gif)
 
 
