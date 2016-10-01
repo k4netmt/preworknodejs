@@ -16,7 +16,7 @@ Walkthrough Gif:
 
 ![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/proxyServer.gif)
 
-![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/learnyounode.PNG)
+
 
 ##Features
 
@@ -76,3 +76,6 @@ Port 9000 will proxy to the echo server on port 8000.
 <
 hello word* Closing connection 0
 ```
+
+##Workshoper
+![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/learnyounode.PNG)
