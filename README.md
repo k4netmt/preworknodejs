@@ -10,6 +10,7 @@ Completed:
 * [x] Required: The destination server is configurable via the `x-destination-url` header
 * [x] Required: Client requests and respones are printed to stdout
 * [x] Required: The `--logfile` argument outputs all logs to the file specified instead of stdout
+* [x] Optionals: Documentation, -h
 
 ![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/proxyServer.gif)
 
@@ -73,6 +74,26 @@ Port 9000 will proxy to the echo server on port 8000.
 <
 hello word* Closing connection 0
 ```
+## Optionals:
+
+###3. Documentation, -h
+node index.js -h
+```bash
+Usage: node ./index.js [options]
+
+Options:
+  -p, --port     Specify a forwarding port
+
+  -x, --host     Specify a forwarding host
+
+  -e, --exec     Specify a process to proxy instead
+
+  -l, --logfile  Specify a output log file
+
+  -h, --help     Show help
+```
+
+![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/optional3.gif)
 
 ##Workshoper
 ###Javascripting:

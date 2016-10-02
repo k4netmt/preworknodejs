@@ -1,3 +1,2 @@
 proxyServer listening @ 127.0.0.1:8000 
 proxyServer listening @ 127.0.0.1:9000 
-echoServer{"host":"127.0.0.1:8000","user-agent":"curl/7.46.0","accept":"*/*","foo":"bar","content-length":"10","content-type":"application/x-www-form-urlencoded"}
