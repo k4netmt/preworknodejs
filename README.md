@@ -95,6 +95,28 @@ Options:
 
 ![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/optional3.gif)
 
+##Configuration:
+
+###CLI Arguments:
+
+The following CLI arguments are supported:
+
+--host
+
+The host of the destination server. Defaults to 127.0.0.1.
+
+--port
+
+The port of the destination server. Defaults to 80 or 8000 when a host is not specified.
+
+--x-destination-url
+
+A single url that overrides the above. E.g., http://www.google.com
+
+--logfile
+
+Specify a file path to redirect logging to.
+
 ##Workshoper
 ###Javascripting:
 ![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/learnyounode.PNG)
