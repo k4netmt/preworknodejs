@@ -1,7 +1,15 @@
 var http = require('http');
 var fs=require('fs')
 var request = require('request');
-var argv=require('yargs').argv
+var argv=require('yargs')
+    .usage('Usage: node ./$0 [options]')
+    .option( "p", { alias: "port", demand: false, describe: "Specify a forwarding port", type: "string" } )
+    .option( "x", { alias: "host", demand: false, describe: "Specify a forwarding host", type: "string" } )
+    .option( "e", { alias: "exec", demand: false, describe: "Specify a process to proxy instead", type: "string" } )
+    .option( "l", { alias: "logfile", demand: false, describe: "Specify a output log file", type: "string" } )
+    .help( "h" )
+    .alias( "h", "help" )
+    .argv
 
 var logStream=argv.logfile ? fs.createWriteStream(argv.logfile) : process.stdout
 
