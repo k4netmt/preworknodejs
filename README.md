@@ -74,26 +74,6 @@ Port 9000 will proxy to the echo server on port 8000.
 <
 hello word* Closing connection 0
 ```
-## Optionals:
-
-###3. Documentation, -h
-node index.js -h
-```bash
-Usage: node ./index.js [options]
-
-Options:
-  -p, --port     Specify a forwarding port
-
-  -x, --host     Specify a forwarding host
-
-  -e, --exec     Specify a process to proxy instead
-
-  -l, --logfile  Specify a output log file
-
-  -h, --help     Show help
-```
-
-![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/optional3.gif)
 
 ##Configuration:
 
@@ -116,6 +96,29 @@ A single url that overrides the above. E.g., http://www.google.com
 --logfile
 
 Specify a file path to redirect logging to.
+
+## Optionals:
+
+###3. Documentation, -h
+node index.js -h
+```bash
+Usage: node ./index.js [options]
+
+Options:
+  -p, --port     Specify a forwarding port
+
+  -x, --host     Specify a forwarding host
+
+  -e, --exec     Specify a process to proxy instead
+
+  -l, --logfile  Specify a output log file
+
+  -h, --help     Show help
+```
+
+![Video Walkthrough](https://github.com/k4netmt/preworknodejs/blob/master/optional3.gif)
+
+
 
 ##Workshoper
 ###Javascripting:
